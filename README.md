@@ -1,6 +1,6 @@
 # DENCYU Inc. アセットリポジトリ
 
-<div align="center" style="padding: 20px;">
+<div align="center" style="padding: 60px;">
   <img src="logo/svg-transparent/DENCYU-logo-light-horizontal.svg" alt="DENCYU Inc. Logo" width="400">
 </div>
 
