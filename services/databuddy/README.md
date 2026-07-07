@@ -1,8 +1,17 @@
 # Databuddy Assets
 
-Databuddy のブランドアセットを配置するディレクトリです。
+Databuddy のブランドアセットを管理するディレクトリです。
 
-## 推奨構成
+## Navigation
+
+| Path | 内容 |
+| --- | --- |
+| [`../../`](../../) | リポジトリ全体のREADME |
+| [`../`](../) | サービスアセット共通README |
+| [`logo/`](logo/) | Databuddy ロゴ |
+| [`icon/`](icon/) | Databuddy アイコン |
+
+## Directory Structure
 
 ```text
 services/databuddy/
@@ -20,9 +29,28 @@ services/databuddy/
     jpg/
 ```
 
-必要な形式のファイルだけを追加してください。
+## Naming Rules
 
-## 現在のアセット
+Databuddy アセットのファイル名は以下の形式です。
+
+```text
+DataBuddy-logo-{variant}-{layout}.{ext}
+DataBuddy-icon-{variant}.{ext}
+```
+
+- `variant`: `light`, `dark`
+- `layout`: `horizontal`, `vertical`
+- `ext`: `svg`, `png`, `jpg`
+
+## Size Rules
+
+- 横ロゴ（`horizontal`）は `1500 x 312 px` に統一しています。
+- 縦ロゴ（`vertical`）は `1500 x 1500 px` です。
+- アイコンは `1500 x 1500 px` です。
+- SVGの横ロゴは `width=1500`, `height=312` に統一しています。
+- SVGの縦ロゴとアイコンは `width=500`, `height=500` です。
+
+## Assets
 
 ### logo/jpg/
 
