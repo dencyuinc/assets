@@ -1,12 +1,27 @@
 # DENCYU Inc. アセットリポジトリ
 
 <div align="center" style="padding: 60px;">
-  <img src="logo/svg-transparent/DENCYU-logo-light-horizontal.svg" alt="DENCYU Inc. Logo" width="400">
+  <img src="company/logo/svg-transparent/DENCYU-logo-light-horizontal.svg" alt="DENCYU Inc. Logo" width="400">
 </div>
 
-このリポジトリには、DENCYU Inc.のブランドアセット（ロゴ、アイコンなど）が含まれています。
+このリポジトリには、DENCYU Inc.の会社アセットと、各サービスのブランドアセットを配置します。
 
-## ブランドカラー
+## ディレクトリ構成
+
+```text
+company/
+  logo/
+  icon/
+services/
+  README.md
+  databuddy/
+```
+
+- `company/`: DENCYU Inc.本体のロゴ、アイコン、ブランドアセット
+- `services/`: サービスごとのロゴ、アイコン、ブランドアセット
+  - `services/databuddy/`: Databuddy のブランドアセット
+
+## 会社アセット
 
 DENCYU Inc.のブランドアイデンティティを維持するため、以下の公式カラーを使用してください。
 
@@ -14,20 +29,18 @@ DENCYU Inc.のブランドアイデンティティを維持するため、以下
 - **Secondary**: `#c8c5c2` - セカンダリカラー、アクセントや補助的な要素に使用
 - **White-like**: `#f3f2f3` - ライト背景や境界線に使用
 
-## ファイル構成
-
-### logo/
+### company/logo/
 
 フルロゴ（ロゴマーク + テキスト）のファイルです。以下の形式で提供しています：
 
 - **SVG**: ベクター形式（拡大縮小に最適）
-  - `logo/svg/`: 標準版
-  - `logo/svg-transparent/`: 透明背景版
+  - `company/logo/svg/`: 標準版
+  - `company/logo/svg-transparent/`: 透明背景版
 - **PNG**: ラスター形式（高解像度）
-  - `logo/png/`: 標準版
-  - `logo/png-transparent/`: 透明背景版
+  - `company/logo/png/`: 標準版
+  - `company/logo/png-transparent/`: 透明背景版
 - **JPG**: ラスター形式（圧縮版）
-  - `logo/jpg/`: 標準版
+  - `company/logo/jpg/`: 標準版
 
 各フォルダには以下のバリエーションが含まれています：
 - `DENCYU-logo-dark-horizontal`: ダーク背景用・横型
@@ -37,41 +50,62 @@ DENCYU Inc.のブランドアイデンティティを維持するため、以下
 - `DENCYU-logo-white-horizontal`: 白背景用・横型
 - `DENCYU-logo-white-vertical`: 白背景用・縦型
 
-### icon/
+### company/icon/
 
 アイコン（ロゴマークのみ）のファイルです。以下の形式で提供しています：
 
 - **SVG**: ベクター形式（拡大縮小に最適）
-  - `icon/svg/`: 標準版
-  - `icon/svg-transparent/`: 透明背景版
+  - `company/icon/svg/`: 標準版
+  - `company/icon/svg-transparent/`: 透明背景版
 - **PNG**: ラスター形式（高解像度）
-  - `icon/png/`: 標準版
-  - `icon/png-transparent/`: 透明背景版
+  - `company/icon/png/`: 標準版
+  - `company/icon/png-transparent/`: 透明背景版
 - **JPG**: ラスター形式（圧縮版）
-  - `icon/jpg/`: 標準版
+  - `company/icon/jpg/`: 標準版
 
 各フォルダには以下のバリエーションが含まれています：
 - `DENCYU-icon-dark`: ダーク背景用（ライトカラー）
 - `DENCYU-icon-light`: ライト背景用（ダークカラー）
 - `DENCYU-icon-white`: 白背景用（ダークカラー）
 
-### 命名規則とカラーバリエーション
+### services/
 
-ファイル名の命名規則により、背景色とロゴ/アイコンの色の対応が決まります：
+サービスごとのブランドアセットを配置するディレクトリです。
 
-#### ロゴ（logo/）
+新しいサービスアセットを追加する場合は、サービス名ごとにディレクトリを作成してください：
+
+```text
+services/
+  service-name/
+    logo/
+    icon/
+```
+
+各サービス配下の `logo/` と `icon/` は、会社アセットと同じ形式別構成（`svg/`, `png/`, `jpg/` など）を推奨します。
+
+現在は以下のサービスディレクトリがあります：
+
+- `services/databuddy/`
+
+サービス固有のブランドカラー、利用規約、命名規則がある場合は、各サービスディレクトリ内に `README.md` を追加してください。
+
+## 命名規則とカラーバリエーション
+
+会社アセットでは、ファイル名の命名規則により、背景色とロゴ/アイコンの色の対応が決まります：
+
+### ロゴ（company/logo/）
 
 - `*-dark-*`: **ダーク背景**用 → ロゴは**ライトカラー**（明るい色）で表示
 - `*-light-*`: **ライト背景**用 → ロゴは**ダークカラー**（Primary: `#373a3d`など）で表示
 - `*-white-*`: **白背景**用 → ロゴは**ダークカラー**（Primary: `#373a3d`など）で表示
 
-#### アイコン（icon/）
+### アイコン（company/icon/）
 
 - `*-dark`: **ダーク背景**用 → アイコンは**ライトカラー**（明るい色）で表示
 - `*-light`: **ライト背景**用 → アイコンは**ダークカラー**（Primary: `#373a3d`など）で表示
 - `*-white`: **白背景**用 → アイコンは**ダークカラー**（Primary: `#373a3d`など）で表示
 
-#### レイアウト（ロゴのみ）
+### レイアウト（ロゴのみ）
 
 - `*-horizontal`: 横型レイアウト（幅広のスペースに適している）
 - `*-vertical`: 縦型レイアウト（縦長のスペースに適している）
@@ -123,10 +157,10 @@ DENCYU Inc.のブランドアイデンティティを維持するため、以下
 
 ## ライセンス
 
-これらのアセットは、DENCYU Inc.の知的財産であり、著作権により保護されています。本リポジトリ内のファイルの使用は、本利用規約の条件に従う必要があります。
+これらのアセットは、DENCYU Inc.または各サービスの知的財産であり、著作権により保護されています。本リポジトリ内のファイルの使用は、本利用規約および各サービスの利用条件に従う必要があります。
 
 ---
 
-**最終更新**: 2025年11月3日
+**最終更新**: 2026年7月8日
 
 **注意**: この利用規約は予告なく変更される場合があります。重要な用途での使用前に、最新版を確認してください。
