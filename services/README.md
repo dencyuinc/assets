@@ -9,6 +9,8 @@
 | [`../`](../) | リポジトリ全体のREADME |
 | [`databuddy/`](databuddy/) | Databuddy のブランドアセット |
 | [`databuddy/README.md`](databuddy/README.md) | Databuddy アセットのファイル一覧とサイズ |
+| [`layerdraw/`](layerdraw/) | LayerDraw のブランドアセット |
+| [`layerdraw/README.md`](layerdraw/README.md) | LayerDraw アセットのファイル一覧とサイズ |
 
 ## Directory Structure
 
@@ -33,6 +35,7 @@ services/
 ## Service List
 
 - [`databuddy/`](databuddy/): Databuddy のブランドアセット
+- [`layerdraw/`](layerdraw/): LayerDraw のブランドアセット
 
 ## Placement Rules
 
