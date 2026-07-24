@@ -17,10 +17,14 @@ LayerDraw のブランドアセットを管理するディレクトリです。
 ```text
 services/layerdraw/
   logo/
+    svg/
+    svg-transparent/
     png/
     png-transparent/
     jpg/
   icon/
+    svg/
+    svg-transparent/
     png/
     png-transparent/
     jpg/
@@ -36,18 +40,30 @@ LayerDraw-icon.{ext}
 ```
 
 - `variant`: `light`, `dark`
-- `ext`: `png`, `jpg`
+- `ext`: `svg`, `png`, `jpg`
 
 アイコンは単一バリアント（紫グラデーション地に白マーク、明暗どちらの背景でも使える）のため、variant サフィックスを持ちません。縦型（vertical）ロゴは存在しないため作成しません。
 
-> **注意**: SVG はこのリポジトリでは提供していません。ロゴ・アイコンのベクター正本（SVG）とブランドガイドラインは [layerdraw リポジトリの `brand/`](https://github.com/dencyuinc/layerdraw/tree/main/brand) にあります。
+> **注意**: SVG の正本は [layerdraw リポジトリの `brand/`](https://github.com/dencyuinc/layerdraw/tree/main/brand) です。`svg-transparent/` は正本をそのまま取り込んだもの、`svg/` はそれに背景を追加したものです。修正が必要な場合は正本側を更新してから取り込み直してください。
 
 ## Size Rules
 
 - 横ロゴ（`horizontal`）は `1880 x 400 px` に統一しています。
 - アイコンは `1500 x 1500 px` です。
+- SVGの横ロゴは `width=1931`, `height=505`（viewBox `1448.25 x 378.75`）です。
+- SVGのアイコンは `width=2000`, `height=2000`（viewBox `1500 x 1500`）です。
 
 ## Assets
+
+### logo/svg-transparent/
+
+- `LayerDraw-logo-light-horizontal.svg` - width 1931, height 505
+- `LayerDraw-logo-dark-horizontal.svg` - width 1931, height 505
+
+### logo/svg/
+
+- `LayerDraw-logo-light-horizontal.svg` - width 1931, height 505（背景色: `#FFFFFF`）
+- `LayerDraw-logo-dark-horizontal.svg` - width 1931, height 505（背景色: `#373A3D`）
 
 ### logo/png-transparent/
 
@@ -63,6 +79,14 @@ LayerDraw-icon.{ext}
 
 - `LayerDraw-logo-light-horizontal.jpg` - 1880 x 400 px（背景色: `#FFFFFF`）
 - `LayerDraw-logo-dark-horizontal.jpg` - 1880 x 400 px（背景色: `#373A3D`）
+
+### icon/svg-transparent/
+
+- `LayerDraw-icon.svg` - width 2000, height 2000
+
+### icon/svg/
+
+- `LayerDraw-icon.svg` - width 2000, height 2000（背景色: `#FFFFFF`）
 
 ### icon/png-transparent/
 
